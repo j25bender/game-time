@@ -5,6 +5,7 @@
 
 body {
 	text-align: center;
+  background-image: url('../assets/Space%20Twitter%20background.jpg');
 }
 
 header {
@@ -28,9 +29,11 @@ header p {
 canvas {
 	width: 600px;
 	height: 600px;
-	border: 1px solid black;
+	border: 3px solid #fff;
+  background-color: #fff;
+  background: rgba(0,0,0,.5);
 	margin: auto;
-  background-image: url('../assets/Space%20Twitter%20background.jpg');
+  
 }
 
 #start-button {
