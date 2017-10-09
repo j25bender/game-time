@@ -1,18 +1,39 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Play', sans-serif;
 }
 
 body {
 	text-align: center;
-  background-image: url('../assets/Space%20Twitter%20background.jpg');
+  /*background-image: url('../assets/Space%20Twitter%20background.jpg');*/
 }
 
 header {
+
   height: 100px;
-  background-color: navy;
+  width: 600px;
+  border: 3px solid #fff;
   color: #fff;
-  padding: 10px 20px;
+  margin: 10px auto;
+}
+.video-background {
+  background: #000;
+  position: fixed;
+  background-size: cover;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+
+.video-background iframe {
+  position: absolute;
+  background-position: center;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 700px;
+  pointer-events: none;
 }
 
 h1 {
@@ -21,11 +42,12 @@ h1 {
 
 header p {
   display: inline-block;
+  font-size: 20px;
 }
 
 .game-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 canvas {
@@ -40,4 +62,16 @@ canvas {
 #start-button {
 	display: block;
 	margin: auto;
+}
+
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
 }

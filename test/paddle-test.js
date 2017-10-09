@@ -5,7 +5,7 @@ describe('Paddle testing', () => {
   let paddle;
 
   beforeEach(() => {
-    paddle = new Paddle(x,y,w,h);
+    paddle = new Paddle(300, 100, 100, 15);
   })
 
   it('should be an instance of Paddle', () => {
@@ -13,6 +13,6 @@ describe('Paddle testing', () => {
   })
 
   it('should have x coordinate', () => {
-    assert.equal(paddle.x, 10);
+    assert.equal(paddle.x, 300);
   })
 })
