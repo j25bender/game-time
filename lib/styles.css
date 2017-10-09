@@ -22,18 +22,19 @@ h1 {
 header p {
   display: inline-block;
 }
+
 .game-info {
   display: flex;
   justify-content: space-between;
 }
+
 canvas {
 	width: 600px;
-	height: 600px;
+	height: 500px;
 	border: 3px solid #fff;
   background-color: #fff;
   background: rgba(0,0,0,.5);
 	margin: auto;
-  
 }
 
 #start-button {
