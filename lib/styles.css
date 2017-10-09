@@ -1,12 +1,39 @@
-body {
-	text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
+body {
+	text-align: center;
+  background-image: url('../assets/Space%20Twitter%20background.jpg');
+}
+
+header {
+  height: 100px;
+  background-color: navy;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+header p {
+  display: inline-block;
+}
+.game-info {
+  display: flex;
+  justify-content: space-between;
+}
 canvas {
 	width: 600px;
 	height: 600px;
-	border: 1px solid black;
+	border: 3px solid #fff;
+  background-color: #fff;
+  background: rgba(0,0,0,.5);
 	margin: auto;
+  
 }
 
 #start-button {
