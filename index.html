@@ -3,17 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>BreakOut</title>
+  <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./lib/styles.css">
 </head>
 <body>
   <header>
+
     <h1>Breakout</h1>
     <div class="game-info">
-    <p>Lives: <span class="lives">3</span></p>
-    <p>Score: <span class="score">0000</span></p>
-    <p>Level: <span class="level">1</span></p>
+    <p>Lives: <span id="lives">3</span></p>
+    <p>Score: <span id="score">0000</span></p>
+    <p>Level: <span id="level">1</span></p>
   </div>
   </header>
+<div class="video-background">
+      <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0"></iframe>
+  </div>
   <canvas id="game" width="600" height="600"></canvas>
   <button type="button" id="start-button">Start</button>
 
