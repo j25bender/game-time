@@ -59,7 +59,8 @@ canvas {
 	margin: auto;
 }
 
-#start-button {
+#start-button,
+#pause-button {
 	display: block;
 	margin: auto;
 }
