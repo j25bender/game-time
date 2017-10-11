@@ -3,11 +3,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Play', sans-serif;
+  color: #fff;
 }
 
 body {
 	text-align: center;
-  /*background-image: url('../assets/Space%20Twitter%20background.jpg');*/
+  background-image: url('../assets/Space%20Twitter%20background.jpg');
+}
+
+.hide {
+  display: none;
 }
 
 header {
@@ -50,18 +55,32 @@ header p {
   justify-content: space-around;
 }
 
-canvas {
+canvas,
+.modal
+ {
 	width: 600px;
 	height: 500px;
 	border: 3px solid #fff;
   background-color: #fff;
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.75);
 	margin: auto;
 }
 
+.modal {
+  margin-bottom: 4px;
+}
+
+.modal h2 {
+  padding-top: 230px;
+  margin: auto;
+}
 #start-button {
 	display: block;
 	margin: auto;
+  width: 150px;
+  height: 30px;
+  background: none;
+  outline: none;
 }
 
 #video-background {

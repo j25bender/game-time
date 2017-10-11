@@ -21,5 +21,16 @@ describe('Paddle testing', () => {
     assert.equal(paddle.y, 100)
   })
 
-  
+  it('should move with a move event', () => {
+    // check paddle initial x position
+
+    // create a fake event
+    // const event = {
+    //   clientX: 52
+    // }
+
+    // paddle.move(event);
+
+    // paddle x should now be the same as event.clientX
+  })  
 })
