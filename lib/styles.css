@@ -26,7 +26,8 @@ header {
   text-align: center;
 }
 
-.video-background {
+.video-background,
+.level3-video {
   background: #000;
   position: fixed;
   background-size: cover;
@@ -34,7 +35,8 @@ header {
   z-index: -99;
 }
 
-.video-background iframe {
+.video-background iframe,
+.level3-video iframe {
   top: 0;
   left: 0;
   width: 1400px;
@@ -92,8 +94,8 @@ canvas,
 }
 
 .modal h2 {
-  padding-top: 200px;
-  margin: 0 auto;
+  padding: 200px 50px 0 50px;
+  margin: auto;
   text-align: center;
 }
 
