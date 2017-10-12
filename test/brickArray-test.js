@@ -13,23 +13,23 @@ describe('BrickArray Testing', () => {
     assert.isFunction(BrickArray);
   });
 
-  it('should instantiate a new BrickArray', () => {
+  it('Should instantiate a new BrickArray', () => {
     assert.isObject(brickArray);
   });
 
-  it('should have rows', () => {
+  it('Should have rows', () => {
     assert.equal(brickArray.r, 2);
   });
 
-  it('should have columns', () => {
+  it('Should have columns', () => {
     assert.equal(brickArray.c, 5);
   });
 
-  it('should have empty array of brickField', () => {
+  it('Should have empty array of brickField', () => {
     assert.deepEqual(brickArray.brickField, []);
   });
 
-  it('should break bricks / decrease brickField length', () => {
+  it('Should break bricks / decrease brickField length', () => {
     brickArray.populateArray();
   	brickArray.brickField.splice(1, 1);
 	});
