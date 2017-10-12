@@ -5,12 +5,20 @@ let brick;
 beforeEach(() => {
   brick = new Brick();
 })
+  
+  it('should be a function', () =>{
+    assert.isFunction(Brick)
+  });
 
   it('should instantiate a new Brick', () => {
     assert.isObject(brick);
   });
 
-  // it.skip('should break when hit by the ball', () => {
-  //   assert.
-  // });
+  it('should have a width', () => {
+    assert.equal(brick.width, 100)
+  });
+
+  it('should have a height', () => {
+    assert.equal(true, true)
+  })
   
