@@ -38,7 +38,6 @@ it('should have a y coordinate', () => {
 })
 
 it('should bounce off the top of the canvas', () => {
-  // let game = new Game(context, canvas);
   game.launchBall();
   assert.equal(game.ball.Yvelocity, -4, true);
   game.ball.y = -10;
@@ -55,24 +54,41 @@ it('should bounce off the right wall', () => {
 })
 
 it('should bounce off the left wall', () => {
+  assert.equal(game.ball.Xvelocity, 0, true)
   game.launchBall();
-  assert.equal(game.ball.Xvelocity, 2.5, true)
-  game.ball.bounceWalls();
-  assert.equal(game.ball.Xvelocity, -2.5, true)
-  game.ball.x = -11;
-  game.ball.bounceWalls();
+  if (game.ball.Xvelocity = -2.5) {
+      game.ball.x = 0;
+      game.ball.bounceWalls();
+  }
   assert.equal(game.ball.Xvelocity, 2.5, true)
 })
 
 it('should bounce off the paddle', () => {
+  let paddle = new Paddle(200, 40, 75, 20)
   game.launchBall();
-  assert.equal(game.ball.Yvelocity > 0, true)
+  assert.equal(game.ball.Yvelocity, 4, true)
+  game.ball.y = 40;
   game.ball.bouncePaddle();
-  assert.equal(game.ball.Yvelocity < 0, true)
+  assert.equal(game.ball.Yvelocity, -4, true)
 })
 
-it.skip('should bounce off a brick', () => {
-  
+it('should break bricks and bounce', () => {
+  let brick = new Brick(15, 500)
+  let brickArray = new BrickArray()
+  game.launchBall();
+  assert.equal(game.ball.Yvelocity, -4, true)
+  game.ball.y = 500;
+  game.brickArray.breakBricks();
+  assert.equal(game.ball.Yvelocity, 4, true)
+});
+
+it('should bounce off the obstacle', () => {
+  let obstacle = new Obstacle(300, 300, 200, 20)
+  game.launchBall();
+  assert.equal(game.ball.Yvelocity, -4, true)
+  game.ball.y = 300;
+  game.obstacle.bounceObstacle();
+  assert.equal(game.ball.Yvelocity, 4, true)
 });
 
 })
