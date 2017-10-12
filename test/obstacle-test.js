@@ -2,7 +2,7 @@ const { assert } = require('chai');
 const Obstacle = require('../lib/Obstacle.js');
 const Game = require('../lib/Game.js')
 
-describe('Obstacle testing', () => {
+describe('Obstacle Testing', () => {
   let obstacle;
 
   beforeEach(() => {

@@ -24,4 +24,18 @@ describe('BrickArray Testing', () => {
   it('should have columns', () => {
     assert.equal(brickArray.c, 5);
   });
+
+  it('should have empty array of brickField', () => {
+    assert.deepEqual(brickArray.brickField, []);
+  });
+
+  it('should break bricks / decrease brickField length', () => {
+    brickArray.populateArray();
+  	console.log(brickArray.brickField.length)
+  	// brickField.splice(i, 1);
+  	console.log(brickArray.brickField.length)
+
+		// assert.deepEqual(brickArray.brickField.length, 9);
+		// console.log(brickArray.brickField.length)
+	});
 })
