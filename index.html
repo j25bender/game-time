@@ -8,22 +8,23 @@
 </head>
 <body>
   <header>
-
     <h1>Breakout</h1>
     <div class="game-info">
-    <p>Lives: <span id="lives">3</span></p>
+    <p>Lives: <span class="lives">3</span></p>
     <p>Score: <span class="score">0000</span></p>
     <p>Level: <span id="level">1</span></p>
   </div>
   </header>
   <div class="start-screen modal">
-    <h3>This game is broken into three levels. </h3>
+    <h3>This game is broken into three levels.</h3>
+
     <ol>
       <li>Break out of the atmostphere</li>
       <li>Break through space</li>
       <li>Break through a black hole to break out of this universe!</li>
     </ol>
     <h3>Instructions</h3>
+
     <ul>
       <li>Press Start to play</li>
       <li>Move the mouse to move the paddle</li>
@@ -31,12 +32,20 @@
       <li>Break bricks to score points!</li>
     </ul>
   </div>
-  <div class="level3 modal hide">
-    <h2>Congrats! Now you can move on to level 3!
+
+  <div class="life-lost modal hide">
+    <h2>SHIT! You lost 1 life. You have <span class="lives">0</span> remaining!
+    </h2>
+    <button class = "continue-button">Continue</button>
+  </div>
+
+  <div class="level2 modal hide">
+    <h2>Congrats! Now you can move on to level 2!
     </h2>
   </div>
-    <div class="level2 modal hide">
-    <h2>Congrats! Now you can move on to level 2!
+
+  <div class="level3 modal hide">
+    <h2>Congrats! Now you can move on to level 3!
     </h2>
   </div>
 
@@ -52,8 +61,10 @@
   <div class="video-background">
       <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0"></iframe>
   </div>
+
   <canvas id="game" class = "hide" width="600" height="600"></canvas>
-  <button type="button" id="start-button">Start</button>
+
+  <button type="button" id="start-button" class="button">Start</button>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="script/jquery-3.2.1.min.js"><\/script>')</script>

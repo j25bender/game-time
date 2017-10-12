@@ -54,12 +54,14 @@ header p {
 
 h3 {
   margin-top: 75px;
+  padding-left: 50px;
 }
 
 
 ul, 
 ol {
   margin: 20px;
+  padding-left: 50px;
 }
 
 li {
@@ -87,15 +89,16 @@ canvas,
 }
 
 .modal {
-  padding-left: 50px;
 }
 
 .modal h2 {
   padding-top: 200px;
   margin: 0 auto;
+  text-align: center;
 }
 
-#start-button {
+#start-button,
+ .continue-button {
 	display: block;
 	margin: 20px auto;
   width: 150px;
@@ -103,3 +106,5 @@ canvas,
   background: rgba(0,0,0,.75);
   outline: none;
 }
+
+
