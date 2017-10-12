@@ -31,11 +31,6 @@ describe('BrickArray Testing', () => {
 
   it('should break bricks / decrease brickField length', () => {
     brickArray.populateArray();
-  	console.log(brickArray.brickField.length)
-  	// brickField.splice(i, 1);
-  	console.log(brickArray.brickField.length)
-
-		// assert.deepEqual(brickArray.brickField.length, 9);
-		// console.log(brickArray.brickField.length)
+  	brickArray.brickField.splice(1, 1);
 	});
 })
