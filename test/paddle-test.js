@@ -2,6 +2,18 @@ const { assert } = require('chai');
 const Paddle = require('../lib/Paddle.js');
 const Game = require('../lib/Game.js')
 
+global.canvas = {
+    width: 'width',
+    height: 'height'
+};
+
+global.event =  {
+    clientX: 30
+}
+
+// let event = new MouseEvent();
+// event.clientX = 30;
+
 describe('Paddle testing', () => {
   let paddle;
 
@@ -22,6 +34,13 @@ describe('Paddle testing', () => {
   })
 
   it('should move with a move event', () => {
+    assert.equal(paddle.x, 300);
+    console.log(paddle);
+    let event = { clientX: 30 }
+    console.log(event);
+    paddle.paddleMove(event);
+    assert.equal(paddle.x, 30);
+
     // check paddle initial x position
 
     // create a fake event

@@ -26,6 +26,13 @@ it('should be a function', () =>{
   assert.isFunction(Ball)
 });
 
+it('should move', () =>{
+  assert.equal(ball.x, 10);
+  ball.Xvelocity = 2.5;
+  ball.move();
+  assert.equal(ball.x, 12.5);
+});
+
 it('should instantiate a new ball', () => {
   assert.isObject(ball)
 });

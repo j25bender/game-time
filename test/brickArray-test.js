@@ -25,10 +25,6 @@ describe('BrickArray Testing', () => {
     assert.equal(brickArray.c, 5);
   });
 
-  it('should have empty array of brickField', () => {
-    assert.deepEqual(brickArray.brickField, []);
-  });
-
   it('should break bricks / decrease brickField length', () => {
     brickArray.populateArray();
   	brickArray.brickField.splice(1, 1);
