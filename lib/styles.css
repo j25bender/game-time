@@ -39,8 +39,8 @@ header {
 .level3-video iframe {
   top: 0;
   left: 0;
-  width: 1400px;
-  height: 800px;
+  width: 100vw;
+  height: 100vh;
   pointer-events: none;
   margin: 0 auto;
 }
