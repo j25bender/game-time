@@ -36,7 +36,7 @@
   <div class="life-lost modal hide">
     <h2>SHIT! You lost 1 life. You have <span class="lives">0</span> remaining!
     </h2>
-    <button class = "continue-button">Continue</button>
+      <button id="continue-button">Continue</button>
   </div>
 
   <div class="level2 modal hide">
@@ -56,6 +56,7 @@
   <div class="game-over modal hide">
     <h2>Oh no!!! Your ship got destroyed before you could break out but you scored <span class="score">0000</span> !!!
     </h2>
+    <button id="start-over-button">Start Over</button>
   </div>
 
   <div class="video-background">
@@ -64,7 +65,7 @@
 
   <canvas id="game" class = "hide" width="600" height="600"></canvas>
 
-  <button type="button" id="start-button" class="button">Start</button>
+  <button type="button" id="start-button">Start</button>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="script/jquery-3.2.1.min.js"><\/script>')</script>
