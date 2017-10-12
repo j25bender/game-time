@@ -2,6 +2,8 @@ const { assert } = require('chai');
 const Brick = require('../lib/Brick.js');
 let brick;
 
+describe('Brick testing', () => {
+
 beforeEach(() => {
   brick = new Brick();
 })
@@ -21,4 +23,4 @@ beforeEach(() => {
   it('should have a height', () => {
     assert.equal(true, true)
   })
-  
+ }) 
