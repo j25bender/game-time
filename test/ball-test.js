@@ -24,8 +24,7 @@ it('should have a y coordinate', () => {
 })
 
 it('should bounce off the top of the canvas', () => {
-  console.log(ball.bounceWalls)
-  // need to call ball.move
+  ball.move();
   assert.equal(ball.Yvelocity, -2, true)
   ball.bounceWalls();
   assert.equal(ball.Yvelocity, 2, true)
