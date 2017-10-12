@@ -99,8 +99,10 @@ canvas,
 
 #start-button,
 #continue-button,
-#start-over-button
+#start-over-button,
+#play-again-button
   {
+  font-size: 16px;
 	display: block;
 	margin: 20px auto;
   width: 150px;
