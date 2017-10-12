@@ -7,7 +7,9 @@
 }
 
 body {
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: url('../assets/Space%20Twitter%20background.jpg');
 }
 
@@ -16,12 +18,12 @@ body {
 }
 
 header {
-
   height: 100px;
   width: 600px;
   border: 3px solid #fff;
   color: #fff;
   margin: 10px auto;
+  text-align: center;
 }
 .video-background {
   background: #000;
@@ -32,13 +34,12 @@ header {
 }
 
 .video-background iframe {
-  position: absolute;
-  background-position: center;
   top: 0;
   left: 0;
-  width: 1000px;
-  height: 700px;
+  width: 100vw;
+  height: 100vh;
   pointer-events: none;
+  margin: 0 auto;
 }
 
 h1 {
@@ -50,9 +51,29 @@ header p {
   font-size: 20px;
 }
 
+h3 {
+  margin-top: 75px;
+}
+
+ol {
+  list
+}
+
+ul {
+  margin: 10px;
+}
+
+li {
+  margin: 10px;
+}
+
 .game-info {
   display: flex;
   justify-content: space-around;
+}
+
+canvas {
+  margin-bottom: 4px;
 }
 
 canvas,
@@ -64,28 +85,30 @@ canvas,
   background-color: #fff;
   background: rgba(0,0,0,.75);
 	margin: auto;
+  /*text-align: center;*/
 }
 
 .modal {
-  margin-bottom: 4px;
+  padding-left: 50px;
+  /*margin-bottom: 4px;*/
 }
 
 .modal h2 {
-  padding-top: 230px;
-  margin: auto;
+  padding-top: 200px;
+  margin: 0 auto;
 }
-#start-button {
 
+#start-button {
 	display: block;
-	margin: auto;
+	margin: 20px auto;
   width: 150px;
   height: 30px;
   background: none;
   outline: none;
 }
 
-#video-background {
-/*  making the video fullscreen  */
+/*#video-background {*/
+/*  making the video fullscreen  
   position: fixed;
   right: 0; 
   bottom: 0;
