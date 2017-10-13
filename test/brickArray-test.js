@@ -1,7 +1,9 @@
 const { assert } = require('chai');
 const BrickArray = require('../lib/BrickArray.js');
+const Ball = require('../lib/Ball.js');
 
 let brickArray;
+let ball;
 
 describe('BrickArray Testing', () => {
 
@@ -25,12 +27,10 @@ describe('BrickArray Testing', () => {
     assert.equal(brickArray.c, 5);
   });
 
-  it('should have empty array of brickField', () => {
-    assert.deepEqual(brickArray.brickField, []);
-  });
-
   it('should break bricks / decrease brickField length', () => {
-    brickArray.populateArray();
-  	brickArray.brickField.splice(1, 1);
+    assert.equal(brickArray.brickField.length, 10);
+    ball = new Ball(548.5, 82);
+    brickArray.breakBricks(brickArray.brickField, ball);
+    assert.equal(brickArray.brickField.length, 9);
 	});
 })
