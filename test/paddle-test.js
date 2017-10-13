@@ -11,9 +11,6 @@ global.event =  {
     clientX: 740
 }
 
-// let event = new MouseEvent();
-// event.clientX = 30;
-
 describe('Paddle testing', () => {
   let paddle;
 
