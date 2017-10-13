@@ -1,13 +1,14 @@
 const { assert } = require('chai');
 const BrickArray = require('../lib/BrickArray.js');
+const Ball = require('../lib/Ball.js');
 
 let brickArray;
+let ball;
 
 describe('BrickArray Testing', () => {
 
 	beforeEach(() => {
   	brickArray = new BrickArray(2, 5);
-  	ball = new Ball(canvas.width / 2, canvas.height - 15);
 	})
 
 	it('BrickArray should be a function', () => {
@@ -27,15 +28,10 @@ describe('BrickArray Testing', () => {
   });
 
   it('should break bricks / decrease brickField length', () => {
-    brickArray.populateArray();
-    console.log(brickArray)
-  	brickArray.brickField.splice(1, 1);
+    console.log(brickArray.brickField.length);
+    assert.equal(brickArray.brickField.length, 10);
+    ball = new Ball(548.5, 82);
+    brickArray.breakBricks(brickArray.brickField, ball);
+    assert.equal(brickArray.brickField.length, 9);
 	});
 })
-
-// write breakbrick test
-// brickArray.populateArray();
-// create ball that is intersecting with one of the bricks
-// check the length of brick array
-// brickArray.breakBricks(brickArray, ball)
-// check the length of brick array is one less
