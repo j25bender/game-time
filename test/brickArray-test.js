@@ -28,7 +28,6 @@ describe('BrickArray Testing', () => {
   });
 
   it('should break bricks / decrease brickField length', () => {
-    console.log(brickArray.brickField.length);
     assert.equal(brickArray.brickField.length, 10);
     ball = new Ball(548.5, 82);
     brickArray.breakBricks(brickArray.brickField, ball);
