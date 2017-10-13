@@ -3,12 +3,12 @@ const Paddle = require('../lib/Paddle.js');
 const Game = require('../lib/Game.js')
 
 global.canvas = {
-    width: 'width',
-    height: 'height'
+    width: 600,
+    height: 600
 };
 
 global.event =  {
-    clientX: 30
+    clientX: 740
 }
 
 // let event = new MouseEvent();
@@ -35,21 +35,8 @@ describe('Paddle testing', () => {
 
   it('should move with a move event', () => {
     assert.equal(paddle.x, 300);
-    console.log(paddle);
-    let event = { clientX: 30 }
-    console.log(event);
-    paddle.paddleMove(event);
+    let mouseX = 300;
+    paddle.paddleMove(event, canvas);
     assert.equal(paddle.x, 30);
-
-    // check paddle initial x position
-
-    // create a fake event
-    // const event = {
-    //   clientX: 52
-    // }
-
-    // paddle.move(event);
-
-    // paddle x should now be the same as event.clientX
   })  
 })
