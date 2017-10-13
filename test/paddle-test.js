@@ -9,10 +9,7 @@ global.canvas = {
 
 global.event =  {
     clientX: 740
-}
-
-// let event = new MouseEvent();
-// event.clientX = 30;
+};
 
 describe('Paddle testing', () => {
   let paddle;
@@ -35,7 +32,7 @@ describe('Paddle testing', () => {
 
   it('should move with a move event', () => {
     assert.equal(paddle.x, 300);
-    let mouseX = 300;
+    let mouseX = 30;
     paddle.paddleMove(event, canvas);
     assert.equal(paddle.x, 30);
   })  
